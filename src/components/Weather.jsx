@@ -66,7 +66,7 @@ const Weather = () => {
   }, []);
 
   return (
-    <div className="bg-amber-50 rounded-2xl">
+    <div className="sm:bg-amber-50 rounded-2xl bg-blue-800">
       <SearchBar search={search} />
       <ErrorMessage message={errorMessage} />
       <Card weatherData={weatherData} />

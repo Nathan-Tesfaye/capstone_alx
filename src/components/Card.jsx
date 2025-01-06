@@ -8,11 +8,11 @@ const Card = ({ weatherData }) => {
   }
 
   return (
-    <div className="flex flex-col items-center gap-1 text-slate-600">
+    <div className="flex flex-col items-center gap-1 sm:text-slate-600">
       <img src={weatherData.icon} alt="Weather Icon" className="size-28"/>
       <p className="text-7xl">{weatherData.temperature}&deg;C</p>
       <p className="text-4xl">{weatherData.location}</p>
-      <div className="flex gap-12 py-7">
+      <div className="flex gap-12 py-7 text-xl">
         <div className="flex items-center gap-2 ">
           <img src={humidity_icon} alt="Humidity icon" className="size-8 bg-slate-600 rounded-full" />
           <div className="flex flex-col">
